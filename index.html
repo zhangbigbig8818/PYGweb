@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 网站TDK三大标签SEO搜索优化 -->
+    <title>品优购PC端商城(PYG.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="品优购PC端商城PYG.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
+
+    <!-- 引入网站favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="css/common/base.css">
+    <!-- 引入公共样式css文件 -->
+    <link rel="stylesheet" href="css/common/common.css">
+    <!-- 引入首页样式css文件 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 这个animate.js 必须写到 index.js的上面引入 -->
+    <script src="js/common/animate.js"></script>
+    <!-- 引入我们首页的js文件 -->
+    <script src="js/index.js"></script>
+    <!-- 引入我们公共的js文件 -->
+    <script src="js/common/common.js"></script>
+    <script src="js/common/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏部分 【shortcut】 -->
+    <section class="shortcut">
+        <div class="w">
+            <!-- 顶部导航栏左边欢迎模块 【fl】 -->
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！&nbsp;</li>
+                    <li>
+                        <a href="#">请登录</a>&nbsp;&nbsp;
+                        <a href="pages/register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 顶部导航栏右边欢迎模块 【fr】 -->
+            <div class="fr">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li></li>
+                    <li><a href="#" class="arrow-icon">我的品优购</a></li>
+                    <li></li>
+                    <li><a href="#">品优购会员</a></li>
+                    <li></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li></li>
+                    <li><a href="#" class="arrow-icon">关注品优购</a></li>
+                    <li></li>
+                    <li><a href="#" class="arrow-icon">客户服务</a></li>
+                    <li></li>
+                    <li><a href="#" class="arrow-icon">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 头部部分 【header】 -->
+    <header class="header w">
+        <!-- 头部左边logo模块 【logo】 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购商城">品优购商城</a>
+            </h1>
+        </div>
+        <!-- 头部中间搜索模块 【search】 -->
+        <div class="search">
+            <input type="search" placeholder="手机" id="search"><button>搜索</button>
+        </div>
+        <!-- 头部中间搜索热词模块 【hontwords】 -->
+        <div class="hotwords">
+            <a href="#" class="style_red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">每满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- 头部右边购物车模块 【shopcar】 -->
+        <div class="shopcar">
+            <a href="pages/car.html">我的购物车</a>
+            <i class="count">8</i>
+        </div>
+    </header>
+
+    <!-- nav分类导航栏部分 【nav】 -->
+    <nav class="nav">
+        <div class="w">
+            <!-- nav分类左边全部分类导航栏部分 【dropdown】 -->
+            <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="#">家用电器</a></li>
+                        <li><a href="pages/list.html">手机、数码、通信（点击）</a></li>
+                        <li><a href="#">电脑、办公</a></li>
+                        <li><a href="#">家居、家具、家装、厨具</a></li>
+                        <li><a href="#">男装、女装、童装、内衣</a></li>
+                        <li><a href="#">个户化妆、清洁用品、宠物</a></li>
+                        <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a></li>
+                        <li><a href="#">运动户外、钟表</a></li>
+                        <li><a href="#">汽车、汽车用品</a></li>
+                        <li><a href="#">母婴、玩具乐器</a></li>
+                        <li><a href="#">食品、酒类、生鲜、特产</a></li>
+                        <li><a href="#">医药保健</a></li>
+                        <li><a href="#">图书、音像、电子书</a></li>
+                        <li><a href="#">彩票、旅行、充值、票务</a></li>
+                        <li><a href="#">理财、众筹、白条、保险</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav分类右边详细分类导航栏部分 【navitems】 -->
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">创智超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- $$ 首页专有模块部分 start -->
+
+    <!-- fixedtool电梯导航部分【fixedtool】 -->
+    <div class="fixedtool">
+        <ul>
+            <li class="current">家用电器</li>
+            <li>手机通讯</li>
+            <li>个户化妆</li>
+            <li>箱包皮具</li>
+            <li>母婴儿童</li>
+        </ul>
+    </div>
+
+    <!-- 首页主体部分【mian】 -->
+    <div class="w">
+        <div class="mian">
+            <!-- 首页中间焦点图模块 【focus】 -->
+            <div class="focus fl">
+                <!-- 左侧按钮 -->
+                <a href="javascript:;" class="arrow-l">&lt;</a>
+                <!-- 右侧按钮 -->
+                <a href="javascript:;" class="arrow-r">&gt;</a>
+                <!-- 核心滚动区 -->
+                <ul>
+                    <li>
+                        <a href="#"><img src="upload/index/focus.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="upload/index/focus1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="upload/index/focus2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="upload/index/focus3.jpg" alt=""></a>
+                    </li>
+                </ul>
+
+                <!-- 小圆圈 -->
+                <ol class="circle">
+                    <li class="current"></li>
+                </ol>
+            </div>
+            <!-- 首页右边新闻模块 【newflash】 -->
+            <div class="newflash">
+                <!-- 首页右上边新闻快报模块 【new】 -->
+                <div class="news">
+                    <div class="news-hd">
+                        <h5>品优购快报</h5>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                    <div class="news-bd">
+                        <ul>
+                            <li><a href="#"><strong>[重磅]</strong>备战开学季，全民半价购数码，快来火速抢购吧</a></li>
+                            <li><a href="#"><strong>[公告]</strong>品优稳占家电网购六成份额，十年磨一剑终有收获</a></li>
+                            <li><a href="#"><strong>[特惠]</strong>百元中秋全品类礼券限量领，看看你是那个幸运儿嘛</a></li>
+                            <li><a href="#"><strong>[公告]</strong>上品优生鲜，享阳澄湖大闸蟹</a></li>
+                            <li><a href="#"><strong>[特惠]</strong>每日享折扣品优品质游</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 首页右中间生活服务模块 【lifeservice】 -->
+                <div class="lifeservice">
+                    <ul>
+                        <li>
+                            <i class="icon01"></i>
+                            <p>话费</p>
+                        </li>
+                        <li>
+                            <em>减</em>
+                            <i class="icon02"></i>
+                            <p>机票</p>
+                        </li>
+                        <li>
+                            <i class="icon03"></i>
+                            <p>电影票</p>
+                        </li>
+                        <li>
+                            <i class="icon04"></i>
+                            <p>游戏</p>
+                        </li>
+                        <li>
+                            <i class="icon05"></i>
+                            <p>彩票</p>
+                        </li>
+                        <li>
+                            <i class="icon06"></i>
+                            <p>加油卡</p>
+                        </li>
+                        <li>
+                            <em>减</em>
+                            <i class="icon07"></i>
+                            <p>酒店</p>
+                        </li>
+                        <li>
+                            <i class="icon08"></i>
+                            <p>火车票</p>
+                        </li>
+                        <li>
+                            <i class="icon09"></i>
+                            <p>众筹</p>
+                        </li>
+                        <li>
+                            <i class="icon10"></i>
+                            <p>理财</p>
+                        </li>
+                        <li>
+                            <i class="icon11"></i>
+                            <p>礼品卡</p>
+                        </li>
+                        <li>
+                            <i class="icon12"></i>
+                            <p>白条</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 首页右下边活动倒计时模块 【downTime】 -->
+                <div class="dowmTime">
+                    <!-- <img src="upload/bargain.png" alt=""> -->
+                    <h2 class="timeTitle">【 距离双十一活动 | 还有 】</h2>
+                    <div class="time-item">
+                        <span><span id="day">00</span>天</span>
+                        <strong><span id="hour">00</span>时</strong>
+                        <strong><span id="minute">00</span>分</strong>
+                        <strong><span id="second">00</span>秒</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 首页产品推荐部分 【recom】 -->
+    <div class="recom w">
+        <!-- 首页产品推荐左边今日推荐模块 【recom_hd】 -->
+        <div class="recom_hd">
+            <img src="images/recom.png" alt="">
+        </div>
+        <!-- 首页产品推荐左边今日推荐产品模块 【recom_hd】 -->
+        <div class="recom_bd">
+            <ul>
+                <li><img src="upload/index/recom_01.png" alt=""></li>
+                <li><img src="upload/index/recom_02.png" alt=""></li>
+                <li><img src="upload/index/recom_03.png" alt=""></li>
+                <li><img src="upload/index/recom_04.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 首页产品楼层展示部分 【floor】 -->
+    <div class="floor">
+        <!-- 第一楼层家用电器楼层【jiadian】 -->
+        <div class="jiandian w">
+            <!-- 第一楼层家用电器楼层顶部菜单栏模块【box_hd】 -->
+            <div class="box_hd">
+                <h3>家用电器</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li>
+                            <a href="#" class="style_red">热门</a>|
+                        </li>
+                        <li>
+                            <a href="#">大家电</a>|
+                        </li>
+                        <li>
+                            <a href="#">生活电器</a>|
+                        </li>
+                        <li>
+                            <a href="#">厨房电器</a>|
+                        </li>
+                        <li>
+                            <a href="#">个护健康</a>|
+                        </li>
+                        <li>
+                            <a href="#">应季电器</a>|
+                        </li>
+                        <li>
+                            <a href="#">空气/净水</a>|
+                        </li>
+                        <li>
+                            <a href="#">新奇特</a>|
+                        </li>
+                        <li>
+                            <a href="#">高端电器</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第一楼层家用电器楼层产品展示模块 【box_bd】 -->
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li>
+                                    <a href="#">节能补贴</a>
+                                </li>
+                                <li>
+                                    <a href="#">4K电视</a>
+                                </li>
+                                <li>
+                                    <a href="#">空气净化器</a>
+                                </li>
+                                <li>
+                                    <a href="#">IH电饭煲</a>
+                                </li>
+                                <li>
+                                    <a href="#">滚筒洗衣机</a>
+                                </li>
+                                <li>
+                                    <a href="#">电热水器</a>
+                                </li>
+                            </ul>
+                            <a href="#"><img src="upload/index/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div class="col_329">
+                            <a href="#"><img src="upload/index/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/index/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二楼层手机通讯楼层【jiadian】 -->
+        <div class="jiandian w">
+            <!-- 第二楼层手机通讯楼层顶部菜单栏模块【box_hd】 -->
+            <div class="box_hd">
+                <h3>手机通讯</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li>
+                            <a href="#" class="style_red">热门</a>|
+                        </li>
+                        <li>
+                            <a href="#">品质优选</a>|
+                        </li>
+                        <li>
+                            <a href="#">新机尝鲜</a>|
+                        </li>
+                        <li>
+                            <a href="#">高性价比</a>|
+                        </li>
+                        <li>
+                            <a href="#">口碑推荐</a>|
+                        </li>
+                        <li>
+                            <a href="#">合约机</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机卡</a>|
+                        </li>
+                        <li>
+                            <a href="#">店铺精选</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机配件</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第二楼层手机通讯楼层产品展示模块 【box_bd】 -->
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li>
+                                    <a href="#">手机通讯</a>
+                                </li>
+                                <li>
+                                    <a href="#">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="#">双卡双待</a>
+                                </li>
+                                <li>
+                                    <a href="#">自营配件</a>
+                                </li>
+                                <li>
+                                    <a href="#">金属机身</a>
+                                </li>
+                                <li>
+                                    <a href="#">高清屏</a>
+                                </li>
+                            </ul>
+                            <a href="#"><img src="upload/index/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div class="col_329">
+                            <a href="#"><img src="upload/index/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/index/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第三楼层个户化妆楼层【jiadian】 -->
+        <div class="jiandian w">
+            <!-- 第三楼层个户化妆楼层顶部菜单栏模块【box_hd】 -->
+            <div class="box_hd">
+                <h3>个户化妆</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li>
+                            <a href="#" class="style_red">热门</a>|
+                        </li>
+                        <li>
+                            <a href="#">品质优选</a>|
+                        </li>
+                        <li>
+                            <a href="#">新机尝鲜</a>|
+                        </li>
+                        <li>
+                            <a href="#">高性价比</a>|
+                        </li>
+                        <li>
+                            <a href="#">口碑推荐</a>|
+                        </li>
+                        <li>
+                            <a href="#">合约机</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机卡</a>|
+                        </li>
+                        <li>
+                            <a href="#">店铺精选</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机配件</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第三楼层个户化妆楼层产品展示模块 【box_bd】 -->
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li>
+                                    <a href="#">手机通讯</a>
+                                </li>
+                                <li>
+                                    <a href="#">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="#">双卡双待</a>
+                                </li>
+                                <li>
+                                    <a href="#">自营配件</a>
+                                </li>
+                                <li>
+                                    <a href="#">金属机身</a>
+                                </li>
+                                <li>
+                                    <a href="#">高清屏</a>
+                                </li>
+                            </ul>
+                            <a href="#"><img src="upload/index/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div class="col_329">
+                            <a href="#"><img src="upload/index/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/index/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第四楼层箱包皮具楼层【jiadian】 -->
+        <div class="jiandian w">
+            <!-- 第四楼层箱包皮具楼层顶部菜单栏模块【box_hd】 -->
+            <div class="box_hd">
+                <h3>箱包皮具</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li>
+                            <a href="#" class="style_red">热门</a>|
+                        </li>
+                        <li>
+                            <a href="#">品质优选</a>|
+                        </li>
+                        <li>
+                            <a href="#">新机尝鲜</a>|
+                        </li>
+                        <li>
+                            <a href="#">高性价比</a>|
+                        </li>
+                        <li>
+                            <a href="#">口碑推荐</a>|
+                        </li>
+                        <li>
+                            <a href="#">合约机</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机卡</a>|
+                        </li>
+                        <li>
+                            <a href="#">店铺精选</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机配件</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第四楼层箱包皮具楼层产品展示模块 【box_bd】 -->
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li>
+                                    <a href="#">手机通讯</a>
+                                </li>
+                                <li>
+                                    <a href="#">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="#">双卡双待</a>
+                                </li>
+                                <li>
+                                    <a href="#">自营配件</a>
+                                </li>
+                                <li>
+                                    <a href="#">金属机身</a>
+                                </li>
+                                <li>
+                                    <a href="#">高清屏</a>
+                                </li>
+                            </ul>
+                            <a href="#"><img src="upload/index/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div class="col_329">
+                            <a href="#"><img src="upload/index/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/index/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第五楼层手机通讯楼层【jiadian】 -->
+        <div class="jiandian w">
+            <!-- 第五楼层母婴儿童楼层顶部菜单栏模块【box_hd】 -->
+            <div class="box_hd">
+                <h3>母婴儿童</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li>
+                            <a href="#" class="style_red">热门</a>|
+                        </li>
+                        <li>
+                            <a href="#">品质优选</a>|
+                        </li>
+                        <li>
+                            <a href="#">新机尝鲜</a>|
+                        </li>
+                        <li>
+                            <a href="#">高性价比</a>|
+                        </li>
+                        <li>
+                            <a href="#">口碑推荐</a>|
+                        </li>
+                        <li>
+                            <a href="#">合约机</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机卡</a>|
+                        </li>
+                        <li>
+                            <a href="#">店铺精选</a>|
+                        </li>
+                        <li>
+                            <a href="#">手机配件</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第五楼层母婴儿童楼层产品展示模块 【box_bd】 -->
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li>
+                                    <a href="#">手机通讯</a>
+                                </li>
+                                <li>
+                                    <a href="#">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="#">双卡双待</a>
+                                </li>
+                                <li>
+                                    <a href="#">自营配件</a>
+                                </li>
+                                <li>
+                                    <a href="#">金属机身</a>
+                                </li>
+                                <li>
+                                    <a href="#">高清屏</a>
+                                </li>
+                            </ul>
+                            <a href="#"><img src="upload/index/floor-1-1.png" alt=""></a>
+                        </div>
+                        <div class="col_329">
+                            <a href="#"><img src="upload/index/floor-1-b01.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-2.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-3.png" alt=""></a>
+                        </div>
+                        <div class="col_221">
+                            <a href="#"><img src="upload/index/floor-1-4.png" alt=""></a>
+                        </div>
+                        <div class="col_219">
+                            <a href="#" class="bb"><img src="upload/index/floor-1-5.png" alt=""></a>
+                            <a href="#"><img src="upload/index/floor-1-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- $$ 首页专有模块部分 end -->
+
+
+    <!-- 底部部分 【footer】 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 底部部分第一层服务类型模块 【mod_service】 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="icons01"></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="icons02"></h5>
+                        <div class="service_txt">
+                            <h4>极速物流</h4>
+                            <p>极速物流，急速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="icons03"></h5>
+                        <div class="service_txt">
+                            <h4>无忧售后</h4>
+                            <p>7天无理由退换货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="icons04"></h5>
+                        <div class="service_txt">
+                            <h4>特色服务</h4>
+                            <p>私人定制家电套餐</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="icons05"></h5>
+                        <div class="service_txt">
+                            <h4>帮助中心</h4>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 底部部分第二层服务指南模块 【mod_help】 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">邮局汇款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">品优购E卡</a></dd>
+                    <dd><a href="#">品优购通信</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="">品优购客户端
+                    </dd>
+                </dl>
+            </div>
+            <!-- 底部部分第三层关于我们模块 【mod_copyright】 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> |
+                    <a href="#">联系我们</a> |
+                    <a href="#">联系客服</a> |
+                    <a href="#">商家入驻</a> |
+                    <a href="#">营销中心</a> |
+                    <a href="#">手机品优购</a> |
+                    <a href="#">友情链接</a> |
+                    <a href="#">销售联盟</a> |
+                    <a href="#">品优购社区</a> |
+                    <a href="#">品优购公益</a> |
+                    <a href="#">English Site</a> |
+                    <a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br> 京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

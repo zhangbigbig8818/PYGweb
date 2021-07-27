@@ -1,0 +1,474 @@
+/* 文件名：首页专属CSS样式文件 */
+
+
+/* fixedtool电梯导航部分【fixedtool】样式 */
+
+.fixedtool {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -680px;
+    width: 66px;
+    background-color: #fff;
+    display: none;
+}
+
+.fixedtool ul li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+/* 一、首页主体部分 【main】 样式 */
+
+
+/* 1、首页主体部分总体盒子样式 */
+
+.mian {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+
+/* 2、首页中间焦点图模块 【focus】 样式 */
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-l {
+    border-radius: 0 15px 15px 0;
+}
+
+.arrow-r {
+    right: 0px;
+    border-radius: 15px 0 0 15px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+
+/* 3、首页右边新闻快报模块 【newflash】 样式 */
+
+
+/* 3.1、首页右边新闻快报模块 【newflash】 总体盒子样式 */
+
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+
+/* 3.2、首页右上边新闻快报模块 【new】 样式 */
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 文字溢出的部分进行隐藏 */
+    overflow: hidden;
+    /* 文本不会换行，文本会在在同一行上继续显示 */
+    white-space: nowrap;
+    /* 显示省略符号来代表被修剪的文本 */
+    text-overflow: ellipsis;
+}
+
+
+/* 3.3、首页右中间生活服务模块 【lifeservice】 样式 */
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li:hover {
+    color: #c81623;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png);
+}
+
+.lifeservice ul li .icon01 {
+    background-position: -17px -16px;
+}
+
+.lifeservice ul li .icon02 {
+    background-position: -79px -16px;
+}
+
+.lifeservice ul li .icon03 {
+    background-position: -142px -16px;
+}
+
+.lifeservice ul li .icon04 {
+    background-position: -206px -16px;
+}
+
+.lifeservice ul li .icon05 {
+    background-position: -17px -88px;
+}
+
+.lifeservice ul li .icon06 {
+    background-position: -79px -88px;
+}
+
+.lifeservice ul li .icon07 {
+    background-position: -142px -88px;
+}
+
+.lifeservice ul li .icon08 {
+    background-position: -206px -88px;
+}
+
+.lifeservice ul li .icon09 {
+    background-position: -17px -159px;
+}
+
+.lifeservice ul li .icon10 {
+    background-position: -79px -159px;
+}
+
+.lifeservice ul li .icon11 {
+    background-position: -142px -154px;
+}
+
+.lifeservice ul li .icon12 {
+    background-position: -206px -159px;
+}
+
+.lifeservice ul li:nth-child(2),
+.lifeservice ul li:nth-child(7) {
+    position: relative;
+}
+
+.lifeservice ul li em {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+    text-align: center;
+    padding: 2px;
+    background-color: green;
+}
+
+
+/* 3.4、首页右下边活动倒计时模块 【downTime】样式 */
+
+
+/* .bargain {
+    margin-top: 5px;
+} */
+
+.timeTitle {
+    width: 250px;
+    height: 35px;
+    margin: 10px 0px auto;
+    text-align: center;
+}
+
+.time-item {
+    width: 250px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.time-item strong {
+    background: #c81623;
+    color: #fff;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 2px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.time-item>span {
+    float: left;
+    line-height: 20px;
+    color: #c81623;
+    font-size: 20px;
+    margin: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time-item span:first-child {
+    font-weight: 700;
+    /* margin-right: 5px; */
+}
+
+
+/* 二、首页产品推荐部分 【recom】 样式 */
+
+
+/* 1、首页产品推荐部分总体盒子样式 */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+
+/* 2、首页产品推荐左边今日推荐模块 【recom_hd】 样式 */
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* 3、首页产品推荐左边今日推荐产品模块 【recom_hd】 样式 */
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li img {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 三、首页产品楼层展示部分 【floor】 样式 */
+
+
+/* 1、首页产品楼层展示部分总体盒子样式 */
+
+
+/* 2、第一楼层家用电器楼层【jiadian】样式 */
+
+
+/* 2.1、第一楼层家用电器楼层【jiadian】总体盒子样式 */
+
+.floor .w {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* 2.2、第一/二楼层家用电器/手机通讯楼层顶部菜单栏模块 【box_hd】 样式 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+
+/* 2.3、第一/二楼层家用电器/手机通讯楼层产品展示模块 【box_bd】 样式 */
+
+
+/* 2.3.1、第一/二楼层家用电器/手机通讯楼层产品展示模块 【box_bd】总体盒子样式 */
+
+.box_bd {
+    height: 361px;
+}
+
+
+/* 2.3.2、左边菜单导航部分 */
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+
+/* 2.3.2、右边产品展示图文部分 */
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

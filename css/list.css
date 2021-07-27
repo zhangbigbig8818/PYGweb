@@ -1,0 +1,90 @@
+/* 文件名：手机、数码、通信分类列表页专属CSS样式文件 */
+
+.nav {
+    /* .sk_con 浮动会有溢出造成空隙，所以需要清除浮动 */
+    overflow: hidden;
+}
+
+
+/* 一、顶部导航栏部分 -- 头部左边秒杀模块 【sk】 样式 */
+
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+
+/* 二、nav分类导航栏部分样式 */
+
+
+/* 1、nav分类左边秒杀列表部分 【sk_list】 样式 */
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* 2、nav分类右边详细分类导航栏部分 【sk_con】 样式 */
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a:after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    padding-left: 3px;
+}
+
+
+/* 二、列表页主体部分 【sk_container】样式 */
+
+.sk_bd {
+    margin: 20px 0;
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    width: 290px;
+    height: 460px;
+    /* 本身 li 就会附带一像素的边框，因此需要先把它改成透明色 */
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
